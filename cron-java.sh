@@ -11,7 +11,7 @@ timestamp() {
 
 echo Java Routine began $TODAY `timestamp` >> /root/cron-log-end-times/java_routine_log.txt
 
-/usr/lib/jvm/jdk1.6.0_30/bin/java -jar /opt/specifytrees/NodeNumberer.jar /opt/specifytrees/nodenumberer.properties geography taxon storage 
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-3.b13.el7_5.x86_64/jre/bin/java -jar /opt/specifytrees/NodeNumberer.jar /opt/specifytrees/nodenumberer.properties geography taxon storage 
 >> /root/cron-log-end-times/java_routine_log.txt
 
 echo Java Routine ended $TODAY `timestamp` >> /root/cron-log-end-times/java_routine_log.txt
